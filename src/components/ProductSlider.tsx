@@ -1,46 +1,70 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const products = [
   {
     id: 1,
-    name: "METALL",
-    image: "/images/metall.png", 
-    description: "Burnished Brush",
+    name: "SOLE",
+    image: "/images/sole_vetrina.jpg",
+    description: "Centro Stile",
   },
   {
     id: 2,
-    name: "OSLO",
-    image: "/images/oslo.png", 
-    description: "Griffe aus Edelstahl, Lack und Glas – Griffausschnitt farbig wählbar",
+    name: "VELIS",
+    image: "/images/velis_cr.jpg",
+    description: "Centro Stile",
   },
   {
     id: 3,
-    name: "GROOVE",
-    image: "/images/groove.png", 
-    description: "Lineare Struktur – ein Spiel mit Licht und Schatten",
+    name: "LIRA",
+    image: "/images/lira_cr.jpg",
+    description: "Piet Billekens",
   },
   {
     id: 4,
-    name: "SIENA",
-    image: "/images/siena.png", 
-    description: "Moderne Landhausfronten – eine zeitgemäße Variante traditioneller Landhausstil-Architektur",
+    name: "MIA",
+    image: "/images/mia_cr.jpg",
+    description: "Centro Stile",
   },
   {
     id: 5,
-    name: "STONE-VENEER",
-    image: "/images/stone-veneer.png", 
-    description: "Ein Hauch von Stein – jedes Blatt ein Unikat",
+    name: "TODAY",
+    image: "/images/today_r.jpg",
+    description: "Piet Billekens",
   },
   {
     id: 6,
-    name: "BETON",
-    image: "/images/beton.png", 
-    description: "Beton und Holz – in Kombination mit Cover-Griffleiste",
+    name: "SORGENTE",
+    image: "/images/sorgente.jpg",
+    description: "Centro Stile",
   },
+  {
+    id: 7,
+    name: "LEVANTE",
+    image: "/images/levante.jpg",
+    description: "Marco Venzano",
+  },
+  {
+    id: 8,
+    name: "MASTER",
+    image: "/images/master.jpg",
+    description: "Meneghello Paolelli Associati",
+  },
+  {
+    id: 9,
+    name: "MANIA",
+    image: "/images/mania.jpg",
+    description: "Centro Stile",
+  },
+  {
+    id: 10,
+    name: "LIKID",
+    image: "/images/likid.jpg",
+    description: "Rodolfo Dordoni, Gordon Guillaumier",
+  }
 ];
+
 
 
 
@@ -63,9 +87,9 @@ export const ProductSlider = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="produkte">
+    <section className="py-20 bg-[white]" id="produkte">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className=" text-center mb-12 ">Produkte</h2>
+        <h2 className=" text-center mb-12 text-[#1a1a1a]">Produkte</h2>
         <div className="relative">
           <div className="flex gap-4 md:gap-8">
             {products

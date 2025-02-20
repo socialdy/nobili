@@ -2,33 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, h5, h6{
-  color: #565655;
+@font-face {
+  font-family: "Gotham SSm";
+  src: url("fonts/GothamSSm-Book.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham SSm";
+  src: url("fonts/GothamSSm-Medium.otf");
   font-weight: 500;
-  
+  font-style: normal;
 }
 
-h2{
-  font-size: 21px;
-  letter-spacing: 0.4px;
+Button {
+  font-size: calc(1rem - 4px);
+  line-height: 1.5;
+  border: 0;
+  font-weight: 00;
+  letter-spacing: .02em;
+  padding: 0 .75rem;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: #1a1a1a;
 }
 
-nav{
-  color: #469ce9;
-  font-size: 16px;
-  line-height: 1.3em;
-  letter-spacing: 0.4px;
+body{
+  font-family: "Gotham SSm";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  background-color: #fff;
+}
+
+h1{
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+nav {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: calc(1rem - 4px);
+  color: #fff;
+  font-family: "Gotham SSm", sans-serif;
 }
 
 
 
-/* Paragraphen */
-p, a,li {
-  color: #565655;
-}
-a:hover{
-  color: #469CE9
-}
+
 
 @layer base {
   :root {

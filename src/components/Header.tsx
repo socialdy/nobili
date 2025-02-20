@@ -8,21 +8,21 @@ export const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+    <header className="fixed w-full top-0 z-50 bg-black backdrop-blur-sm border-b border-black">
       <div className="container mx-auto px-6 md:px-12">
         <nav className="flex items-center justify-between h-20">
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
   <a href="/" className="h-6 sm:h-8">
     <img
-      src="/images/wf_logo.png"
-      alt="Wolter Lackfronten Logo"
+      src="/images/nobili.png"
+      alt="Nobili Logo"
       className="h-full"
     />
   </a>
   <a href="https://kuechenstudio-bergheim.at" className="h-11 sm:h-14">
     <img
-      src="/images/me_logo_black.png"
+      src="/images/me_logo.png"
       alt="Küchenstudio Bergheim Logo"
       className="h-full"
     />
@@ -33,23 +33,23 @@ export const Header = () => {
           <div className="hidden lg:flex items-center gap-8">
             <a
               href="#produkte"
-              className="hover:text-[#469CE9]/80"
+              className=""
             >
               Produkte
             </a>
             <a
-              href="#ueber-wolter-lackfronten"
-              className="hover:text-[#469CE9]/80"
+              href="#ueber-nobili"
+              className=""
             >
-              Über Wolter Lackfronten
+              Über Nobili
             </a>
             <a
               href="/#referenzen"
-              className="hover:text-[#469CE9]/80"
+              className=""
             >
               Referenzen
             </a>
-            <a href="/#beratung" className="hover:text-[#469CE9]/80">
+            <a href="/#beratung" className="">
                 Jetzt Beratung anfordern
             </a>
           </div>
@@ -58,7 +58,7 @@ export const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text[#469CE9] hover:text-[#469CE9]/80 focus:outline-none"
+              className="text-white hover:text-white focus:outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,30 +80,30 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white text-gray-700 border-t border-gray-100 shadow-md">
+          <div className="lg:hidden bg-black text-white border-t border-gray-100 shadow-md">
             <div className="flex flex-col items-start gap-4 py-4 pl-6">
               <a
                 href="/#produkte"
-                className="hover:text-[#469CE9]/80"
+                className=""
                 onClick={toggleMobileMenu}
               >
                 Produkte
               </a>
               <a
-                href="/#ueber-wolter-lackfronten"
-                className="hover:text-[#469CE9]/80"
+                href="/#ueber-nobili"
+                className=""
                 onClick={toggleMobileMenu}
               >
-                Über Wolter Lackfronten
+                Über Nobili
               </a>
               <a
                 href="/#referenzen"
-                className="hover:text-[#469CE9]/80"
+                className=""
                 onClick={toggleMobileMenu}
               >
                 Referenzen
               </a>
-              <a href="/#beratung" onClick={toggleMobileMenu} className="hover:text-[#469CE9]/80">
+              <a href="/#beratung" onClick={toggleMobileMenu} className="">
                   Jetzt Beratung anfordern
               </a>
             </div>

@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#ffffff] text-white py-16">
+    <footer className="bg-black text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
           <a href="https://kuechenstudio-bergheim.at" className="">
             <img
-              src="/images/me_logo_black.png" // Ersetze dies durch den tatsächlichen Pfad zu deinem Logo
+              src="/images/me_logo.png" // Ersetze dies durch den tatsächlichen Pfad zu deinem Logo
               alt="Küchenstudio Bergheim Logo"
               className="h-16 mb-3" // Passe die Größe des Logos an
             />
@@ -70,7 +70,7 @@ export const Footer = () => {
         </div>
 
         {/* Rechtliche Links */}
-        <div className="mt-16 pt-8 border-t border-[#2578C1] text-center">
+        <div className="mt-16 pt-8 border-t border-white text-center">
           <ul className="space-y-3">
             <li>
               <a href="https://kuechenstudio-bergheim.at/impressum" className="">
